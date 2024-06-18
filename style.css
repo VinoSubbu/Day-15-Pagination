@@ -1,0 +1,73 @@
+
+
+.outer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    padding: 10px;
+}
+.design{
+    border: .3px solid black;
+    box-shadow: 0 10px 10px rgba(50,50,50,0.1);
+    padding:1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+.pagination{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    top: 4rem;
+
+}
+.root{
+    font-size:10px;
+}
+.margin1{
+    height:2.1rem;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    border-collapse: collapse;
+}
+.margin{
+    height:2rem;
+    width:2rem;
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    border-collapse: collapse;
+}
+.margin:hover{
+    background-color: black;
+    color: white;
+}
+button[name="next"]{
+    background-color: rgb(83, 129, 8);
+    color:white;
+}
+button[name="previous"]{
+    background-color: rgb(8, 77, 141);
+    color:white;
+}
+button:hover{
+    cursor: pointer;
+}
+.bold{
+    font-weight: bold;
+}
+
+@media screen and (max-width:300px){
+    .outer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .pagination{
+        top:130rem; 
+    }
+}
